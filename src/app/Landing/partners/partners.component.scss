@@ -1,0 +1,100 @@
+@import "../../../styles.scss";
+
+
+.partner{
+    position: relative;
+    padding: 100px 125px;
+    @media (min-width: $width1) and (max-width: $width2) { 
+        padding: 100px 18px;
+    
+    }
+    .header{
+        /* z-index: 9999; */
+        position: absolute;
+        left: 34%;
+        top: -150px;
+        @media (min-width: $width1) and (max-width: $width2) { 
+            left: 14%;
+            top: -110px;
+        
+        }
+        .back{
+            background-image: url('../../../assets/img/Partners.png');
+            background-repeat: no-repeat;
+            width: 450px;
+            background-size: contain;
+            height: 150px;
+            @media (min-width: $width1) and (max-width: $width2) { 
+                width: 280px;
+                height: 150px;
+            }
+        }
+        h3{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 69px;
+            text-align: justify;
+            color: #FFFFFF;
+            position: absolute;
+            top: 20%;
+            left: 14%;
+            @media (min-width: $width1) and (max-width: $width2) { 
+                font-size: 39px;
+                top: 4%;
+                left: 26%;
+            }
+        }
+    }
+    .part-cont{
+        padding: 0 100px;
+        overflow: hidden;
+       
+        .cont-center{
+            justify-content: center;
+            @media (min-width: $width1) and (max-width: $width2) { 
+                display: none;
+             }
+            .part{
+                width: 224.12px;
+                height: 72.32px;
+                margin: 30px auto;
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+        
+
+    }
+
+    .mobile{
+        display: none;
+        @media (min-width: $width1) and (max-width: $width2) { 
+           display: inline-block;
+        }
+        .carousel-indicators{
+            bottom: -80px;
+            button{
+                background-color: #000;
+            }
+        }
+        .part{
+            width: 100px;
+            height: 100px;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+                position: absolute;
+                bottom: 30%;
+                left: 0;
+            }
+        }
+    }
+  
+
+}
